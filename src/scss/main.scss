@@ -1,8 +1,52 @@
-/* Base */
-@import "./base/reset";
-@import "./base/vars";
-@import "./base/base";
-@import "./base/containers";
+// fonts
+@font-face {
+    font-family: 'Misto';
+    src: url(../fonts/Misto.otf);
+    font-style: normal;
+    font-weight: 400;
+}
 
-/* Blocks */
-@import "./blocks/*.scss";
+@font-face {
+    font-family: 'Moniqa';
+    src: url(../fonts/Moniqa-Heading.otf);
+    font-style: normal;
+    font-weight: 400, 600;
+}
+
+// vendors
+@import 'vendors/reset';
+
+// utils
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/animations';
+
+// layout
+@import 'layout/base';
+@import 'layout/scroll';
+@import 'layout/grid';
+
+//plugins
+@import 'plugins/owl.carousel';
+@import 'plugins/owl.theme.default';
+@import 'plugins/carousel';
+
+
+//      &__ui kit
+@import 'components/ui/btn';
+
+
+// components
+@import 'components/header';
+@import 'components/footer';
+
+//      &__section
+@import 'components/section/section-main';
+@import 'components/section/section-team';
+@import 'components/section/section-why';
+@import 'components/section/section-categories';
+@import 'components/section/section-reviews';
+@import 'components/section/section-contacts';
+
+
+

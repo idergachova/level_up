@@ -16,14 +16,291 @@
 </head>
 <body>
 	<div class="wrapper">
-	@@include('components/header.html')
-	@@include('components/section/section-main.html')
-	@@include('components/section/section-team.html')
-	@@include('components/section/section-why.html')
-	@@include('components/section/section-categories.html')
-	@@include('components/section/section-reviews.html')
-	@@include('components/section/section-contacts.html')
-	@@include('components/footer.html')
+	<header class="header">
+	<div class="header__nav container">
+		<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+		<div class="header__menulist">
+			<a href="/" class="header__logo"><img src="../../img/logo.png" alt="logo" width="53" height="53"></a>
+			
+			<ul class="header__ul" id="headerUl">
+				<li class="header__li"><a class="header__a" href="#team">Our team</a></li>
+				<li class="header__li"><a class="header__a" href="#courses">Courses</a></li>
+				<li class="header__li"><a class="header__a" href="#reviews">Reviews</a></li>
+				<li class="header__li"><a class="header__a" href="#contacts">Contacts</a></li>
+				<span class="material-icons icon-close" onclick="navToggle()">close</span>	
+			</ul>
+		</div>
+		<div class="header__menuicons">
+			<ul class="header__social">
+				<li class="header__li"><a  href="/"><img src="../../img/icon/instagram.png" alt="instagram" width="30" height="30"></a></li>
+				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+					<circle cx="15" cy="15" r="14.5" fill="#F1E896" stroke="black"/>
+				  </svg>
+				<li class="header__li"><a  href="/"><img src="../../img/icon/facebook.png" alt="facebook" width="30" height="30"></a></li>
+			
+			</ul>
+			<button class="btn header_btn">Call Me</button>
+		</div>
+		<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+	</div>
+</header>
+
+	<section class="section-main">
+    <div class="main-section container">
+        <div class="main-section__item">
+            <h3 class="main-section__subtitle text-focus-in">welcome</h3>
+            <div class="main-section__link">
+                <h1 class="main-section__title">Level UP</h1>
+                
+                <button class="btn bnt__main" href="#courses" aria-label="choose category"><img src="../../../img/icon/arrow.svg" alt="arrow" width="42" height="35"></button>
+            </div>
+            <p class="main-section__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elitse do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitan ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+            <div class="main-section__categories">
+                <div class="categories__item">
+                    <a href="#" class="categories__a">Web Development</a>
+                    <a href="#" class="categories__a">Mobile Development</a>
+                    <a href="#" class="categories__a">Database</a>
+                    <a href="#" class="categories__a">Data Science</a>
+                </div>
+                <div class="categories__item second-line">
+                <a href="#" class="categories__a">Design</a>
+                <a href="#" class="categories__a">Network & Security</a>
+                <a href="#" class="categories__a">Software Testing</a>
+                <a href="#" class="categories__a">Game Development</a>
+                </div>
+                <a href="#" class="categories__a third-line">It management</a>
+            </div>
+        </div>
+
+        <img class="main-tree" src="../../../img/main-tree.jpg" alt="main-tree" width="635" height="700">
+    </div>
+</section>
+	<section class="section-team" id="team">
+    <div class="team-section container" >
+        <div class="team-section__main-desc">
+            <div class="team-section__teach-box blue-box__joel">
+                <p class="teach-box__desc">“Lorem ipsum dolor sitamests, consectetur adipiscing elsdit, sed do eiusmod temporincidid ut labore max.”</p>
+                <p class="teach-box__name">Joel Pristly</p>
+                <img src="../../../img/team/joel.jpg" alt="joel" class="teach-box__img" width="250" height="250">
+            </div>
+            <div class="team-section__about-team">
+                <h2 class="team-section__title text-focus-in">our team</h2>
+                <p class="team-section__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elitsinere. Maecenas fringilla risus id egestas congue. Praesent blandit, ipsum vel placerat congue, eros orci gravida nunc, ac tempus dui augue aliquam tortor. Suspendisse vel dolor egestas, fovc ultricies lectus vitae, fringilla nunc. Quisque vel erat sed orci pellentesque vulputate vitae imperdiet est. Etiam sit ametwe hendrerit dolor, quis volutpat libero. Etiam scelerisque convlis augue, non ultrices magna tristique eget.</p>
+                <img src="../../../img/team/team.jpg" alt="team" class="team-section__img" width="560" height="322">
+            </div>
+            <div class="team-section__teach-box yellow-box">
+                <span class="yellow-box__round"></span>
+                <p class="teach-box__desc yellow-box__desc">“Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.”</p>
+                <p class="teach-box__name yellow-box__name">jerry MIdrey</p>
+                <img src="../../../img/team/jerry.png" alt="jerry" class="teach-box__img yellow-box__img" width="211" height="275">
+            </div>
+        </div>
+        <div class="team-section__count">
+            <div class="team-section__teach-box white-box">
+                <span class="white-box__round"></span>
+                <p class="teach-box__desc white-box__desc">“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, UXY consectetur, adipisc.”</p>
+                <p class="teach-box__name white-box__name">Suzi Shell</p>
+                <img src="../../../img/team/suzi.png" alt="suzi" class="teach-box__img white-box__img" width="190" height="250">
+            </div>
+            
+            <div class="team-section__counter">
+                <div class="counter__item">
+                    <h4 class="counter__numb">>50</h4>
+                    <p class="counter__desc">Released Groups</p>
+                </div>
+                <div class="counter__item">
+                    <h4 class="counter__numb">+200</h4>
+                    <p class="counter__desc">employed students</p>
+                </div>
+                <div class="counter__item">
+                    <h4 class="counter__numb">~250</h4>
+                    <p class="counter__desc">successful projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="section-why">
+    <div class="why-section container">
+        <h2 class="why-section__title text-focus-in">why choose us</h2>
+        <p class="why-section__desc">Quisque vel erat sed orci pellentesque vulputate vitae imperdiet est. Etiam sit amet hendrerit dolor, quis volutpat libero. Etiam scelerisque convallis augue, non ultrices magna tristique eget.</p>
+        <div class="why-section__advantages">
+            
+            <img src="../../../img/why/team-hands.jpg"  class="scale-in-center" id="team-hands" alt="team-hands" width="250" height="440">
+            
+            <div class="advantages__item blue-card scale-in-center">
+                <img src="../../../img/why/compliance.svg" alt="compliance" class="scale-in-center" width="55" height="55">
+                <p class="advantages__desc">Curabitur condimentum mi et consectetur convalionh lissasw. Praesent urnavas lacus, ultrices necabrcoe tincidunt vel, porta atrew enreim. Donec condimentu justo sit amet erospeincg pharetra, quis fringilla magna porta. Ut eu lacus eget lacus posueredcza efficitur non ut urna. Nam tempus est eu velit pareta iaculis.</p>
+                <img src="../../../img/why/infrastructure.svg" alt="infrastructure" width="55" height="55">
+            </div>
+
+            <img src="../../../img/why/touch.jpg" class="scale-in-center" id="touch" alt="touch" width="250" height="440">
+           
+            <div class="advantages__item yellow-card scale-in-center">
+                <img src="../../../img/why/compensation.svg" alt="compensation" width="55" height="55">
+                <p class="advantages__desc yellow-card">Etiam sodales, velitac in terdum euismod, libero arcu dignissim enim, pharetra gravida mauris odio lobortis neque. Mauris eros nibh, vehicula eu iaculis sit amet, imperdiet vel sem. Donec facilisis leo eu ipsum gravida, ac dignissim leo rhoncus. Aliquam feugiat luctus magna, ut nfuehfu.</p>
+                <img src="../../../img/why/reliability.svg" alt="reliability" width="55" height="55">
+                
+            </div>
+
+            <img src="../../../img/why/developer.jpg" id="developer" class="scale-in-center" alt="touch"  width="250" height="440">
+
+        </div>
+    </div>
+</section>
+	<section class="section-categories" id="courses">
+    <div class="categories-section" >
+        <h2 class="categories-section__title text-focus-in">choose your category</h2>
+
+        <div class="categories-section__box">
+            <div class="categories-section__item">
+                <h3 class="item__title">Development</h3>
+                <div class="item__hover__info">
+                    <p class="item__decs">Quisque vel erat sed orci pellentesf vulputate vitae imperdiet est. Etiam sit amet hendrerit dolor, quis volutp libero. Etiam scelerisque convallis augue, non ultrices magna tristique eget.</p>
+                    <div class="item__arrow"><img src="../../../img/icon/blue-arrow.svg" alt="blue arrow" width="35" height="42"></div>
+                </div>
+            </div>
+
+            <div class="categories-section__item none-border">
+                <h3 class="item__title">Design</h3>
+                <div class="item__hover__info">
+                    <p class="item__decs">Quisque vel erat sed orci pellentesf vulputate vitae imperdiet est. Etiam sit amet hendrerit dolor, quis volutp libero. Etiam scelerisque convallis augue, non ultrices magna tristique eget.</p>
+                    <div class="item__arrow"><img src="../../../img/icon/blue-arrow.svg" alt="blue arrow" width="35" height="42"></div>
+                </div>
+            </div>
+
+            <div class="categories-section__item none-border">
+                <h3 class="item__title">IT & Software</h3>
+                <div class="item__hover__info">
+                    <p class="item__decs">Quisque vel erat sed orci pellentesf vulputate vitae imperdiet est. Etiam sit amet hendrerit dolor, quis volutp libero. Etiam scelerisque convallis augue, non ultrices magna tristique eget.</p>
+                    <div class="item__arrow"><img src="../../../img/icon/blue-arrow.svg" alt="blue arrow" width="35" height="42"></div>
+                </div>
+            </div>
+
+            <div class="categories-section__item none-border">
+                <h3 class="item__title">Software Testing</h3>
+                <div class="item__hover__info">
+                    <p class="item__decs">Quisque vel erat sed orci pellentesf vulputate vitae imperdiet est. Etiam sit amet hendrerit dolor, quis volutp libero. Etiam scelerisque convallis augue, non ultrices magna tristique eget.</p>
+                    <div class="item__arrow"><img src="../../../img/icon/blue-arrow.svg" alt="blue arrow" width="35" height="42"></div>
+                </div>
+            </div>
+
+            <div class="categories-section__item none-border">
+                <h3 class="item__title">It management</h3>
+                <div class="item__hover__info">
+                    <p class="item__decs">Quisque vel erat sed orci pellentesf vulputate vitae imperdiet est. Etiam sit amet hendrerit dolor, quis volutp libero. Etiam scelerisque convallis augue, non ultrices magna tristique eget.</p>
+                    <div class="item__arrow"><img src="../../../img/icon/blue-arrow.svg" alt="blue arrow" width="35" height="42"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+	<section class="section-reviews" id="reviews">
+    <div class="reviews-section container" >
+        <h2 class="reviews-section__title text-focus-in">reviews our students</h2>
+        <div class="owl-carousel owl-theme">
+            <div class="review_item" >
+                <div class="review_item__img"><img id="visi" src="../../../img/students/mark.jpg" alt="mark" width="160" height="160"></div>
+                <div class="review_item__info">
+                    <h5 class="review_item__name">MARK, <span>JAVA</span></h5>
+                    <p class="review_item__desc">Quisque vel erat sed orci pelle ntesf vulputate vitae imperdiet est. Etiam sit amet hendrerit dolor, quis volutp libero. Etiam scelerisque convallis augue, non ultrices magna tristique eget.</p>
+                </div>
+            </div>
+
+            <div class="review_item">
+                <div class="review_item__img"><img src="../../../img/students/vanessa.jpg" alt="mark" width="160" height="160"></div>
+                <div class="review_item__info">
+                    <h5 class="review_item__name">VANESSA <span>WEB-DESING</span></h5>
+                    <p class="review_item__desc">Curabitur condimentum mi et consectetur convallis. Praesent urna lacus, ultrices nec BUHDVM  tincidunt vel, porta at enim. Donec condimentum justo sit amet eros pharetra, quis fringilla.</p>
+                </div>
+            </div>
+
+            <div class="review_item">
+                <div class="review_item__img"><img src="../../../img/students/jullian.jpg" alt="mark" width="160" height="160"></div>
+                <div class="review_item__info">
+                    <h5 class="review_item__name">Julian, <span>Python</span></h5>
+                    <p class="review_item__desc">Curabitur condimentum mi et consectetur convallis. Praesent urna lacus, ultrices nec BUHDVM  tincidunt vel, porta at enim. Donec condimentum justo sit amet eros pharetra, quis fringilla.</p>
+                </div>
+            </div>
+
+            <div class="review_item">
+                <div class="review_item__img"><img src="../../../img/students/maja.jpg" alt="mark" width="160" height="160"></div>
+                <div class="review_item__info">
+                    <h5 class="review_item__name">MAJA, <span>QA Testing</span></h5>
+                    <p class="review_item__desc">Quisque vel erat sed orci pelle ntesf vulputate vitae imperdiet est. Etiam sit amet hendrerit dolor, quis volutp libero. Etiam scelerisque convallis augue, non ultrices magna tristique eget.</p>
+                </div>
+            </div>
+
+            <div class="review_item">
+                <div class="review_item__img"><img src="../../../img/students/pablo.png" alt="mark" width="160" height="160"></div>
+                <div class="review_item__info">
+                    <h5 class="review_item__name">PABLO, <span>IT management</span></h5>
+                    <p class="review_item__desc">Quisque vel erat sed orci pelle ntesf vulputate vitae imperdiet est. Etiam sit amet hendrerit dolor, quis volutp libero. Etiam scelerisque convallis augue, non ultrices magna tristique eget.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="section-contacts" id="contacts">
+    <div class="contacts-section container" >
+        <h2 class="contacts-section__title text-focus-in">contacts</h2>
+
+        <div class="contacts-section__content">
+            
+            <div class="contacts-section__info">
+                        
+                <div class="contacts-section__item">
+                    <img src="../../../img/icon/pointer.svg" alt="pointer" width="50" height="50">
+                    <div class="contacts-section__desc">
+                        <div class="contact__title">Address</div>
+                        <div class="contact__desc">931 Washington Dr.Pittsfield, MA 01201</div>
+                    </div>
+                </div>
+
+                <div class="contacts-section__item">
+                    <img src="../../../img/icon/telephone.svg" alt="telephone" width="50" height="50">
+                    <div class="contacts-section__desc">
+                        <div class="contact__title">Phone</div>
+                        <div class="contact__desc">+421 908 39 41 10, <br>+421 908 39 41 19</div>
+                    </div>
+                </div>
+
+                <div class="contacts-section__item">
+                    <img src="../../../img/icon/cusstomer.svg" alt="cusstomer" width="50" height="50">
+                    <div class="contacts-section__desc">
+                        <div class="contact__title">customer service</div>
+                        <div class="contact__desc">+421 908 39 41 10, <br>+421 908 39 41 19</div>
+                    </div>
+                </div>
+            </div>   
+            <img src="../../../img/map.jpg" alt="map" class="contacts-section__img" width="922" height="615">
+         </div>
+    </div>
+</section>
+	<footer class="footer">
+	<div class="footer-section container">	
+		<div class="footer-section__title">level up <span class="blue-round"></span></div>
+		<div class="footer-section__nav">
+			<ul class="footer-section__ul">
+				<li class="footer-section__li"><a class="footer-section__a" href="#team">Our team</a></li>
+				<li class="footer-section__li"><a class="footer-section__a" href="#courses">Courses</a></li>
+				<li class="footer-section__li"><a class="footer-section__a" href="#reviews">Reviews</a></li>
+				<li class="footer-section__li"><a class="footer-section__a" href="#contacts">Contacts</a></li>
+			</ul>
+		</div>
+		<div class="header__menuicons">
+			<ul class="header__social">
+				<li class="header__li"><a  href="/"><img src="../../img/icon/instagram.png" alt="instagram" width="30" height="30"></a></li>
+				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+					<circle cx="15" cy="15" r="14.5" fill="#F1E896" stroke="black"/>
+				  </svg>
+				<li class="header__li"><a  href="/"><img src="../../img/icon/facebook.png" alt="facebook" width="30" height="30"></a></li>
+		</ul>
+		</div>
+	</div>
+</footer>
+
 </div>
 
 	<script

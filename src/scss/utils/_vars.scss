@@ -1,0 +1,26 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+:root {
+
+	// fonts 
+	
+	--ff: 'Inter';
+	--ff-title: 'Misto';
+	--ff-subtitle: 'Moniqa';
+	--transition: .2s all ease-in-out;
+		
+	// colors
+	--c-main: #3754F5;
+	--c-secondary: #F1E896;
+	
+	--c-black: #000;
+	--c-white: #fff;
+
+	--c-main-bg: #FBFBFB;
+	--c-background: #D9D9D9;
+	--c-bg-box: #F5F5F5;
+	}

@@ -1,0 +1,133 @@
+.header {
+	padding-top: 20px;
+    padding-bottom: 20px;
+	border-radius: 0px 0px 40px 40px;
+	border-right: 1px solid var(--c-black);
+	border-bottom: 1px solid var(--c-black);
+	border-left: 1px solid var(--c-black);
+	background: var(--c-background);
+
+	&__menulist, &__menuicons {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__backdrop {
+		background: rgba(0, 0, 0, 0.6);
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		transform: translateX(120%);
+		display: none;
+		transition: var(--transition);
+		opacity: 0;
+
+		@include tablet {
+			display: none;
+		}
+
+		&._active {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	&__ul {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		z-index: 9;
+
+		@include tablet {
+			display: none;
+			// z-index: 9;
+			// position: fixed;
+			// width: 70%;
+			// height: 100%;
+			// flex-direction: column;
+			// left: 0;
+			// top: 0;
+			// background: var(--c-primary);
+			// align-items: center;
+			// justify-content: center;
+			// transform: translateX(-120%);
+			// transition: var(--transition);
+		}
+
+		&._active {
+			transform: translateX(0);
+		}
+
+		.icon-close {
+			position: absolute;
+			top: 40px;
+			right: 40px;
+			color: var(--c-text-white);
+		}
+	}
+
+	&__a {
+		color: var(--c-black);
+		font-family: var(--ff-subtitle);
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 3.2px;
+		text-transform: uppercase;
+		transition: var(-transition);
+		padding: 6px 18px;
+		border-radius: 40px;
+		border: 1px solid transparent;
+		background: transparent;
+		@include tablet {
+			color: var(--c-text-white);
+		}
+
+			&:hover {
+				color: #3754F5;
+				padding: 6px 18px;
+				border-radius: 40px;
+				border: 1px solid #3754F5;
+				background: #F5F5F5;
+				transition: var(-transition);
+			}
+		}
+
+	&__social {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		@include tablet {
+			display: none;
+		}
+
+
+		img{
+			cursor: pointer;
+			&:hover {
+				transform: translateY(-5px);
+			}
+		}
+	}
+	}
+
+
+.icon-menu,
+.icon-close {
+	cursor: pointer;
+	display: none;
+
+	@include tablet {
+		display: inline-block;
+	}
+}
+

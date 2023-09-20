@@ -1,0 +1,64 @@
+.header_btn {
+    border-radius: 40px;
+    border: 1px solid var(--c-black);
+    background: var(--c-main);
+    padding: 12px 40px;
+    color: var(--c-white);
+    font-family: var(--ff-subtitle);
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3.84px;
+    text-transform: uppercase;
+    outline: 0;
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+        border: 1px solid var(--c-main);
+		background: var(--c-bg-box);
+        color: var(--c-black);
+        transition: var(--transition);
+    }
+    @include tablet {
+        display: none;
+}} 
+
+.bnt__main {
+    position: relative;
+    transition: var(--transition);
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    background: var(--c-main);
+    font-size: 12px;
+    outline: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    @include mobile {
+        width: 80px;
+        height: 80px;
+    }
+  }
+    
+  @keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.bnt__main :hover {
+	animation: bounce 1s;
+}
+          
